@@ -255,12 +255,12 @@
       <div class="menu-text"><div class="menu-title">Notificaciones</div><div class="menu-sub">Alertas de tu cuenta</div></div>
       <span class="menu-arrow">›</span>
     </div>
-    <div class="menu-item" onclick="window.open('https://wa.me/595983556115?text=Hola%20SkillPro%2C%20quiero%20registrarme%20como%20profesional','_blank')">
+    <div class="menu-item" onclick="window.open('https://wa.me/595987174331?text=Hola%20SkillPro%2C%20quiero%20registrarme%20como%20profesional','_blank')">
       <div class="menu-icon" style="background:rgba(37,211,102,.12)">💼</div>
       <div class="menu-text"><div class="menu-title">¿Sos profesional?</div><div class="menu-sub">Registrate y conseguí más trabajo</div></div>
       <span class="menu-arrow">›</span>
     </div>
-    <div class="menu-item" onclick="window.open('https://wa.me/595983556115','_blank')">
+    <div class="menu-item" onclick="window.open('https://wa.me/595987174331','_blank')">
       <div class="menu-icon" style="background:rgba(212,140,18,.12)">💬</div>
       <div class="menu-text"><div class="menu-title">Contactar soporte</div><div class="menu-sub">WhatsApp directo</div></div>
       <span class="menu-arrow">›</span>
@@ -440,7 +440,7 @@ function enviarSolicitud() {
   const urgencia = document.getElementById('f-urgencia').value;
   if (!nombre || !tel || !zona || !cat || !desc || !urgencia) { showToast('Completá todos los campos'); return; }
   const msg = `*Nueva solicitud SkillPro*%0ANombre: ${nombre}%0ATeléfono: ${tel}%0AZona: ${zona}%0ACategoría: ${cat}%0ADescripción: ${desc}%0AUrgencia: ${urgencia}`;
-  window.open(`https://wa.me/595983556115?text=${msg}`, '_blank');
+  window.open(`https://wa.me/595987174331?text=${msg}`, '_blank');
   document.getElementById('success-msg').classList.add('show');
   ['f-nombre','f-telefono','f-zona','f-descripcion'].forEach(id => document.getElementById(id).value = '');
   document.getElementById('f-categoria').value = '';
